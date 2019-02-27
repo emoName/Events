@@ -24,9 +24,17 @@ namespace Events
             Fax fax = new Fax(mail);
             Phone phone = new Phone(mail);
 
-            mail.SimulateMail("Mesaj din Main !! ");
+            mail.SimulateMail("Mesaj 1 din Main !! ");
 
-           // fax.
+            fax.Unsubscribe(mail);
+            Console.WriteLine();
+
+            mail.SimulateMail("Mesaj 2 din Main !!!");
+
+            //----------------------------------------------------------------------------------------------------
+
+
+
 
 
 

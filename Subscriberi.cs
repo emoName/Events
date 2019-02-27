@@ -8,6 +8,10 @@ namespace Events
 {
     class Fax
     {
+        public Fax()
+        {
+
+        }
 
         public Fax(MailManager e)
         {
@@ -15,7 +19,7 @@ namespace Events
           
         }
 
-        private void FaxMsg(object sender, NewMailEvevent e)
+        public void FaxMsg(object sender, NewMailEvevent e)
         {
             Console.WriteLine("New Mesage Fax ");
 
@@ -25,7 +29,7 @@ namespace Events
 
         }
 
-        private void Unsubscribe(MailManager e)
+        public void Unsubscribe(MailManager e)
         {
             e.newMail -= FaxMsg;
         }
@@ -36,6 +40,10 @@ namespace Events
 
     class Phone
     {
+        public Phone()
+        {
+
+        }
 
         public Phone(MailManager e)
         {
@@ -43,7 +51,7 @@ namespace Events
 
         }
 
-        private void PhoneMsg(object sender, NewMailEvevent e)
+        public void PhoneMsg(object sender, NewMailEvevent e)
         {
             Console.WriteLine("New Mesage Phone ");
 
