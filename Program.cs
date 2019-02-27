@@ -10,14 +10,28 @@ namespace Events
     {
         static void Main(string[] args)
         {
+            Delegate d = new Delegate();
+
+            d.RunMethod();
+
+            Console.WriteLine("===========================================================");
+            //-------------------------------------------------------------------------------------------------
+
+
+            MailManager mail = new MailManager();
+
+
+            Fax fax = new Fax(mail);
+            Phone phone = new Phone(mail);
+
+            mail.SimulateMail("Mesaj din Main !! ");
+
+           // fax.
 
 
 
 
-
-
-
-
+            Console.ReadLine();
         }
     }
 }
