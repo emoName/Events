@@ -1,0 +1,5 @@
+*
+!experiment/
+!Curs exemple/
+!*.cs
+!.gitignore
